@@ -22,12 +22,13 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
 html {
-    font-family: "Lucida Sans", sans-serif;
+    font-family: "Times New Roman", sans-serif;
 }
 .header {
-    background-color: #9933cc;
-    color: #ffffff;
+    background-color: rgb(15,200,15);
+    color: rgb(0,0,0);
     padding: 15px;
 }
 .menu ul {
