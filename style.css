@@ -1,0 +1,39 @@
+body {
+	background-color: powderblue;
+}
+a:visited {
+    color: blue;
+}
+#align {
+	text-align: center;
+}
+#nav {
+	text-align: center;
+    border: 2px solid white;
+	padding: 5px;
+}
+#indent {
+	padding-left: 3em;
+}
+#alignleft {
+	text-align: left;
+}
+#box {
+	text-align: left;
+	padding: 2px;
+}
+input:invalid {
+  border: 1.5px dashed orange;
+}
+input:valid {
+  border: 1.5px solid white;
+}
+#rcorners3 {
+    border-radius: 25px;
+    background: url(paper.gif);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
