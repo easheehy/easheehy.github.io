@@ -7,11 +7,18 @@
     clear: both;
     display: table;
 }
+
 [class*="col-"] {
     float: left;
     padding: 15px;
+	width: 100%;
 }
-/*
+
+/*[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
 .col-m-1 {width: 8.33%;}
 .col-m-2 {width: 16.66%;}
 .col-m-3 {width: 25%;}
@@ -64,17 +71,6 @@ a:unvisited {
 	text-decoration: none;	
 }
 
-.aside {
-    background-color: #ffffff;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-}
-
-[class*="col-"] {
-    float: left;
-}
 @media only screen and (min-width: 600px) {
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
