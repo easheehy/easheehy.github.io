@@ -1,7 +1,6 @@
 var cur = -1;
 var max = 0;
 var images = [];
-var interval = 1500;
 
 function start() {
     images = document.images;
@@ -17,13 +16,13 @@ function rotate() {
 	else
 		cur += 1;
 
-    for (i = 0; i < max; i += 1) {
-		images[i].hidden = (i !== cur);
+    for (i = 0; i < max; i++) {
+		images[i].hidden = (i != cur);
     }
 };
 
-window.onload = function() {
+function window.onload() {
 start();
 images[cur].hidden = false;
-setInterval(rotate, interval);
+setInterval(rotate, 1500);
 };
