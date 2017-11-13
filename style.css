@@ -56,6 +56,14 @@ a {
 	text-decoration: none;	
 }
 
+a:visited {
+	text-decoration: none;	
+}
+
+a:unvisited {
+	text-decoration: none;	
+}
+
 [class*="col-"] {
     width: 100%;
 }
