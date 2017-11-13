@@ -72,7 +72,7 @@ a:unvisited {
 }
 /*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 @media only screen and (min-width: 768px) {
-    .col-1 {width: 15%;}
-    .col-2 {width: 60%;}
+    .col-1 {width: 20%;}
+    .col-2 {width: 80%;}
 	.col-3 {width: 75%;}
 }
