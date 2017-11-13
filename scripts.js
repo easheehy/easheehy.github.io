@@ -1,5 +1,12 @@
+$("nav li").mouseenter(function(){
+     $(this).css("color", "rgb(0,61,153)");
+})
+$("nav li").mouseleave(function(){
+     $(this).css("color", "rgb(0,82,204)");
+})
+
 function detectBrowser() {
-    if (navigator.userAgent.search("MSIE") & gt; = 0) {
+    if (navigator.userAgent.search("MSIE") & gt() = 0) {
         // insert conditional IE code here
     }
     else if (navigator.userAgent.search("Chrome") & gt; = 0) {
@@ -15,10 +22,3 @@ function detectBrowser() {
         // insert conditional Opera code here
     }
 }
-
-$("nav li").mouseenter(function(){
-     $(this).css("color", "rgb(0,61,153)");
-})
-$("nav li").mouseleave(function(){
-     $(this).css("color", "rgb(0,82,204)");
-})
