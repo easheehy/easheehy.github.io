@@ -11,7 +11,11 @@ function start() {
 
 function rotate() {
     var i;
-    cur = (cur >= max - 1) ? 0 : cur += 1;
+    if(cur >= max - 1)
+		cur = 0;
+	else
+		cur += 1;
+	
     for (i = 0; i < max; i += 1) {
 		profiles[i].hidden = (i !== cur);
     }
