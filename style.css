@@ -67,6 +67,11 @@ html {
 .nav li:hover {
     background-color: #0099cc;
 }
+
+.tab {
+	margin-left: 10px;
+}
+
 /*
 ul {
     list-style-type: none;
