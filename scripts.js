@@ -1,24 +1,24 @@
-var currentImageIndex = -1;
-var maxImageIndex = 0;
-var images = [];
-var changeInterval = 1500;
+var cur = -1;
+var max = 0;
+var profiles = [];
+var interval = 1500;
 
-var setUp = function() {
-    images = document.images;
-    maxImageIndex = images.length;
-    currentImageIndex = 0;
+function start() {
+    profiles = document.profiles;
+    max = profiles.length;
+    cur = 0;
 };
 
-var changeBanner = function() {
+function rotate() {
     var i;
-    currentImageIndex = (currentImageIndex >= maxImageIndex - 1) ? 0 : currentImageIndex += 1;
-    for (i = 0; i < maxImageIndex; i += 1) {
-		images[i].hidden = (i !== currentImageIndex);
+    cur = (cur >= max - 1) ? 0 : cur += 1;
+    for (i = 0; i < max; i += 1) {
+		profiles[i].hidden = (i !== cur);
     }
 };
 
 window.onload = function() {
-    setUp();
-images[currentImageIndex].hidden = false;
-setInterval(changeBanner, changeInterval);
+    start();
+profiles[cur].hidden = false;
+setInterval(rotate, interval);
 };
