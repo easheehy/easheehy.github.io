@@ -2,18 +2,42 @@
 <html>
 	<head>
 		<link href="style.css" rel="stylesheet"/>
-		<script src="scripts.js" type="text/javascript"></script>
 		<title>Eamon Sheehy's Portfolio Site - About</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Eamon Sheehy">
 		<script type="text/javascript">
-		var index=0;
-		function changeBanner(){ 
-			[].forEach.call(document.images,function (v,i) { document.images[i].hidden = i!==index});
-			index = (index+1) % document.images.length;
-		}
-		window.onload = function () {setInterval(changeBanner, 10000)};
-		</script>
+    var currentImageIndex = -1,
+        maxImageIndex = 0,
+        images = [],
+        changeInterval = 1500;
+
+    // Prepares relevant variables to cycle throguh images
+    var setUp = function() {
+        images = document.images;
+        maxImageIndex = images.length;
+        currentImageIndex = 0;
+    };
+
+    // Changes the banner currently being displayed
+    var changeBanner = function() {
+        var i;
+
+        currentImageIndex = (currentImageIndex >= maxImageIndex - 1) ? 0 : currentImageIndex += 1;
+
+        for (i = 0; i < maxImageIndex; i += 1) {
+            images[i].hidden = (i !== currentImageIndex);
+        }
+    };
+
+    // A function which is triggered following the `load` event
+    window.onload = function() {
+        setUp();
+
+        images[currentImageIndex].hidden = false; // show the first banner image;
+
+        setInterval(changeBanner, changeInterval); // following a delay, keep changing the banner image by the specified interval
+    };
+</script>
 	</head>
 
 	<body>
@@ -31,12 +55,12 @@
 		</ul>
 	</nav>
 
-	<div class="col-6" id="wrapper">
+	<div class="col-6">
 		<h2>Biography</h2>
-		<img src="profile[0].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20"></img>
-		<img src="profile[1].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20"></img>
-		<img src="profile[2].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20"></img>
-		<img src="profile[3].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20"></img>
+		<img src="profile[0].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20" hidden></img>
+		<img src="profile[1].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20" hidden></img>
+		<img src="profile[2].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20" hidden></img>
+		<img src="profile[3].jpg" align="right" alt="This Web Developer in all his glory" height="300" width="300" hspace="20" hidden></img>
 		<p>I was born and raised in Irvine, California. Most of my childhood was spent playing video
 		games, either by myself or with my dad or siblings. My interests ranged from Age of Empires II 
 		and Lords of the Realm II to Prince of Persia and the first Call of Duty. With a father in Systems Programming 
