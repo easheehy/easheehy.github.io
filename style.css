@@ -25,20 +25,20 @@ html {
 }
 
 .nav ul {
-    list-style-type: none;
+    /*list-style-type: none;*/
     margin: 0;
     padding: 0;
 }
 .nav li {
-    border-radius: 25px;
+	text-align: center;
+	color: rgb(255,255,255);
 	padding: 8px;
-    text-align: center;
-	margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: rgb(255,255,255);
+	margin-bottom: 8px;
+	background-color: rgb(0,82,204);
+	border-radius: 25px;
 }
 .nav li:hover {
-    background-color: #0099cc;
+	background-color: rgb(0,61,153);
 }
 
 a {
@@ -54,7 +54,7 @@ a:unvisited {
 }
 
 @media only screen and (min-width: 600px) {
-    .col-m-1 {width: 8.33%;}
+    .col-m-1 {width: 10%;}
     .col-m-2 {width: 15%;}
     .col-m-3 {width: 25%;}
     .col-m-4 {width: 30%;}
@@ -67,7 +67,7 @@ a:unvisited {
 }
 
 @media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
+    .col-1 {width: 10%;}
     .col-2 {width: 15%;}
     .col-3 {width: 25%;}
     .col-4 {width: 30%;}
