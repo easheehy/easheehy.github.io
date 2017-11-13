@@ -4,14 +4,17 @@ var images = [];
 
 function rotate() {
     var i;
+	var j;
 
 	if(cur >= max - 1)
 		cur = 0;
 	else
 		cur += 1;
-
+	
     for (i = 0; i < max; i++) {
-		images[i].hidden = (i !== cur);
+		if(i == cur)
+			j = false;
+		images[i].hidden = j;
     }
 };
 
