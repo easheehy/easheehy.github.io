@@ -1,24 +1,24 @@
-/*$("nav li").mouseenter(function(){
-     $(this).css("color", "rgb(0,61,153)");
-})
-$("nav li").mouseleave(function(){
-     $(this).css("color", "rgb(0,82,204)");
-})
+var currentImageIndex = -1;
+var maxImageIndex = 0;
+var images = [];
+var changeInterval = 1500;
 
-function detectBrowser() {
-    if (navigator.userAgent.search("MSIE") & gt() = 0) {
-        // insert conditional IE code here
+var setUp = function() {
+    images = document.images;
+    maxImageIndex = images.length;
+    currentImageIndex = 0;
+};
+
+var changeBanner = function() {
+    var i;
+    currentImageIndex = (currentImageIndex >= maxImageIndex - 1) ? 0 : currentImageIndex += 1;
+    for (i = 0; i < maxImageIndex; i += 1) {
+		images[i].hidden = (i !== currentImageIndex);
     }
-    else if (navigator.userAgent.search("Chrome") & gt; = 0) {
-        // insert conditional Chrome code here
-    }
-    else if (navigator.userAgent.search("Firefox") & gt; = 0) {
-        // insert conditional Firefox Code here
-    }
-    else if (navigator.userAgent.search("Safari") & gt; = 0 & amp; & amp; navigator.userAgent.search("Chrome") & lt; 0) {
-        // insert conditional Safari code here
-    }
-    else if (navigator.userAgent.search("Opera") & gt; = 0) {
-        // insert conditional Opera code here
-    }
-}*/
+};
+
+window.onload = function() {
+    setUp();
+images[currentImageIndex].hidden = false;
+setInterval(changeBanner, changeInterval);
+};
