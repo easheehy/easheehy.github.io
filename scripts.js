@@ -1,7 +1,3 @@
-var cur = -1;
-var max = 0;
-var images = [];
-
 function rotate() {
     var i;
 	var j;
@@ -21,9 +17,10 @@ function rotate() {
 };
 
 window.onload = function() {
+var images = []
 images = document.images;
-max = images.length;
-cur = 0;
+var max = images.length;
+var cur = 0;
 images[cur].hidden = false;
 setInterval(rotate, 1500);
 };
