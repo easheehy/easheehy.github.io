@@ -14,6 +14,8 @@ function rotate() {
     for (i = 0; i < max; i++) {
 		if(i == cur)
 			j = false;
+		else
+			j =  true;
 		images[i].hidden = j;
     }
 };
