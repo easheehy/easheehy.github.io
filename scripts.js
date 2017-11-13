@@ -17,7 +17,7 @@ function rotate() {
 		cur += 1;
 
     for (i = 0; i < max; i++) {
-		images[i].hidden = (i != cur);
+		images[i].hidden = (i !== cur);
     }
 };
 
