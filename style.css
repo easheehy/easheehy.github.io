@@ -52,6 +52,10 @@ html {
     background-color: #0099cc;
 }
 
+a {
+	text-decoration: none;	
+}
+
 [class*="col-"] {
     width: 100%;
 }
