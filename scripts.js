@@ -1,4 +1,6 @@
-$("nav li").mouseenter(function(){
+
+
+/*$("nav li").mouseenter(function(){
      $(this).css("color", "rgb(0,61,153)");
 })
 $("nav li").mouseleave(function(){
@@ -21,4 +23,4 @@ function detectBrowser() {
     else if (navigator.userAgent.search("Opera") & gt; = 0) {
         // insert conditional Opera code here
     }
-}
+}*/
