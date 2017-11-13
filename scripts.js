@@ -1,14 +1,9 @@
-var index = 0;
-
-function changeBanner() {
-    [].forEach.call(document.profile, function(v, i) {
-        document.profile[i].hidden = i !== index
-    });
-    index = (index + 1) % document.profile.length;
+var index=0;
+function changeBanner(){ 
+	[].forEach.call(document.images,function (v,i) { document.images[i].hidden = i!==index});
+	index = (index+1) % document.images.length;
 }
-window.onload = function() {
-    setInterval(changeBanner, 100)
-};
+window.onload = function () {setInterval(changeBanner, 10000)};
 
 /*$("nav li").mouseenter(function(){
      $(this).css("color", "rgb(0,61,153)");
