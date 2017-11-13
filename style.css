@@ -1,13 +1,16 @@
 /*Eamon Sheehy*/
-* {
+*, *:before, *:after {
     box-sizing: border-box;
 }
+
+/*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
+/*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -61,7 +64,7 @@ a:visited {
 a:unvisited {
 	text-decoration: none;	
 }
-
+/*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 @media only screen and (min-width: 600px) {
     .col-m-1 {width: 10%;}
     .col-m-2 {width: 15%;}
@@ -74,16 +77,8 @@ a:unvisited {
     .col-m-9 {width: 90%;}
     .col-m-10 {width: 100%;}
 }
-
+/*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 @media only screen and (min-width: 768px) {
-    .col-1 {width: 10%;}
     .col-2 {width: 15%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 30%;}
-    .col-5 {width: 50%;}
     .col-6 {width: 60%;}
-    .col-7 {width: 75%;}
-    .col-8 {width: 80%;}
-    .col-9 {width: 90%;}
-    .col-10 {width: 100%;}
 }
