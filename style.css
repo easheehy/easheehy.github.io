@@ -37,6 +37,11 @@ header {
 	border-radius: 25px;
 }
 
+.p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
