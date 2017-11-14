@@ -71,8 +71,8 @@ a:unvisited {
 }
 /*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 @media only screen and (min-width: 600px) {
-    .col-m-1 {width: 10%;}
-    .col-m-2 {width: 90%;}
+    .col-m-1 {width: 20%;}
+    .col-m-2 {width: 80%;}
 }
 /*Based on examples from W3 Schools https://www.w3schools.com/css/css_rwd_intro.asp */
 @media only screen and (min-width: 768px) {
