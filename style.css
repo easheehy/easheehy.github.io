@@ -71,13 +71,13 @@ a:visited {
     transform: scale(1.5, 1.5);
 }
 
-ul {
+menu ul {
     margin: 0;
     padding: 0;
 	list-style-type: none;
 }
 
-li {
+menu li {
 	padding: 20px;
 	margin-bottom: 20px;
 	list-style-type: none;
