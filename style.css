@@ -66,6 +66,10 @@ a:visited {
 	text-decoration: none;	
 }
 
+.img { 
+	display:block;
+}  
+
 ul {
     margin: 0;
     padding: 0;
