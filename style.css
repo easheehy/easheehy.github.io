@@ -66,8 +66,15 @@ a:visited {
 	text-decoration: none;	
 }
 
-.padIt{
-	padding-left: 250PX;
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	padding: 8px;
+	margin-bottom: 8px;
+	border-radius: 25px;
 }
 
 a:unvisited {
