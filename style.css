@@ -71,16 +71,6 @@ a:visited {
     transform: scale(1.5, 1.5);
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-	padding:  8px;
-	margin-bottom: 8px;
-}
-
 a:unvisited {
 	text-decoration: none;	
 }
