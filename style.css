@@ -66,6 +66,10 @@ a:visited {
 	text-decoration: none;	
 }
 
+.padIt{
+	padding-left: 250PX;
+}
+
 a:unvisited {
 	text-decoration: none;	
 }
