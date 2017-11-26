@@ -76,6 +76,7 @@ li {
 	padding: 8px;
 	margin-bottom: 8px;
 	border-radius: 25px;
+	list-style-type: none;
 }
 
 a:unvisited {
