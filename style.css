@@ -71,6 +71,10 @@ a:visited {
     transform: scale(1.5, 1.5);
 }
 
+.padIt {
+	padding-left: 350px;
+}
+
 a:unvisited {
 	text-decoration: none;	
 }
